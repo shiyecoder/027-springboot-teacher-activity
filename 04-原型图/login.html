@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><title>登录 · 教师教研活动与成果管理系统</title>
+<style>
+:root{--pri:#0F3B5D;--sec:#2878B5}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;height:100vh;display:flex;background:#F4F8FB}
+.left{flex:1.15;background:linear-gradient(150deg,#0F3B5D 0%,#1C5279 55%,#2878B5 100%);color:#fff;padding:56px 64px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.left:after{content:"";position:absolute;right:-120px;bottom:-140px;width:420px;height:420px;border:1px solid rgba(255,255,255,.18);border-radius:50%}
+.left:before{content:"";position:absolute;right:20px;bottom:-40px;width:260px;height:260px;border:1px solid rgba(255,255,255,.12);border-radius:50%}
+.brand{font-size:15px;letter-spacing:2px;display:flex;align-items:center;gap:10px}
+.brand i{width:26px;height:26px;background:#fff;border-radius:6px;display:inline-block}
+.hero h1{font-size:34px;line-height:1.35;font-weight:600;letter-spacing:1px}
+.hero p{margin-top:16px;color:#BFD8E8;font-size:14px;line-height:1.9;max-width:420px}
+.stat{display:flex;gap:40px;font-size:13px;color:#CFE2EF}
+.stat b{display:block;font-size:26px;color:#fff;margin-bottom:4px;font-variant-numeric:tabular-nums}
+.right{flex:.85;display:flex;align-items:center;justify-content:center;background:#fff}
+.form{width:360px}
+.form h2{font-size:22px;color:#0F3B5D;margin-bottom:6px}
+.form .sub{color:#5F7484;font-size:13px;margin-bottom:26px}
+.field{margin-bottom:16px}
+.field label{display:block;font-size:13px;color:#5F7484;margin-bottom:7px}
+.field input{width:100%;height:42px;border:1px solid #DCE6EE;border-radius:6px;padding:0 12px;font-size:14px;outline:none}
+.field input:focus{border-color:#2878B5;box-shadow:0 0 0 3px rgba(40,120,181,.12)}
+.row{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:#5F7484;margin:6px 0 22px}
+.btn{width:100%;height:42px;background:#0F3B5D;color:#fff;border:0;border-radius:6px;font-size:15px;cursor:pointer;letter-spacing:1px}
+.btn:hover{background:#14496F}
+.tip{margin-top:18px;font-size:12px;color:#8FA3B1;line-height:1.8}
+</style></head><body>
+<div class="left"><div class="brand"><i></i>教师教研活动与成果管理系统</div>
+<div class="hero"><h1>教研过程留痕<br>成果认定有据</h1>
+<p>从学期计划、集体备课、听评课到成果认定与学时台账，把教研组的每一次活动记录成可追溯的教学资产。</p></div>
+<div class="stat"><div><b>68</b>本学期活动</div><div><b>86.4%</b>教师参与率</div><div><b>42</b>教研成果</div></div></div>
+<div class="right"><form class="form" onsubmit="location.href='dashboard.html';return false">
+<h2>账号登录</h2><div class="sub">使用学校统一账号登录，首次登录请修改密码</div>
+<div class="field"><label>账号</label><input value="liwenjing" placeholder="请输入账号"></div>
+<div class="field"><label>密码</label><input type="password" value="123456" placeholder="请输入密码"></div>
+<div class="row"><label><input type="checkbox"> 记住账号</label><span>忘记密码请联系教务处</span></div>
+<button class="btn">登 录</button>
+<div class="tip">演示账号：admin / admin123　教务 jiaowu / 123456　组长 liwenjing / 123456　教师 wanghaitao / 123456　专家 zhangqm / 123456</div>
+</form></div></body></html>
